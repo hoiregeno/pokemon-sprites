@@ -1,0 +1,8 @@
+:root{
+    --secondary-clr: hsl(190, 100%, 5%);
+    --border: 1.5px solid hsla(210, 100%, 75%, 0.15);
+    --primary-clr: hsl(210, 100%, 75%);
+    --space-m: 1rem;
+    --radius-s: .25rem;
+    --text-size: 1rem;
+}

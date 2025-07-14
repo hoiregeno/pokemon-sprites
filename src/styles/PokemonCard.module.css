@@ -1,0 +1,40 @@
+/* ------ CARD ------ */
+.card {
+  border: var(--border);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.85rem;
+  animation: fadeIn 3s ease forwards;
+  box-shadow: 0 0 15px hsla(240, 100%, 70%, 0.1);
+}
+
+/* ------ CARD TEXTS ------ */
+.pokemonName, 
+.pokemonAbility, 
+.pokemonType{
+  text-align: center;
+  color: var(--primary-clr);
+}
+.pokemonAbility,
+.pokemonType{
+  font-size: var(--text-size);
+  text-transform: capitalize;
+}
+.pokemonName{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: var(--space-m);
+  text-transform: uppercase;
+}
+.pokemonSprite{
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Fade in animation for .card */
+@keyframes fadeIn{
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

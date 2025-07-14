@@ -1,0 +1,73 @@
+/* ------ TITLE ------ */
+.appTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-clr);
+}
+
+/* ------ FORM ------ */
+.fetchForm {
+  width: min(300px, 100%);
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  overflow: hidden;
+  margin: var(--space-m) 0 1.5rem;
+}
+
+/* ------ INPUT & BUTTON ------ */
+.fetchForm input[type="text"],
+.fetchForm button[type="submit"] {
+  font-family: inherit;
+  outline: none;
+  font-size: var(--text-size);
+  border-radius: var(--radius-s);
+}
+
+/* ------ INPUT ------ */
+.fetchForm input[type="text"],
+.fetchForm input[type="text"]::placeholder {
+  color: var(--primary-clr);
+}
+.fetchForm input[type="text"] {
+  min-width: 0;
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+  border: var(--border);
+  background-color: transparent;
+  transition: border 150ms ease;
+}
+.fetchForm input[type="text"]:hover,
+.fetchForm input[type="text"]:focus {
+  border: 1.5px solid hsla(210, 100%, 75%, 0.5);
+}
+
+/* ------ BUTTON ------ */
+.fetchForm button[type="submit"] {
+  flex-shrink: 0;
+  font-weight: 600;
+  background-color: var(--primary-clr);
+  color: var(--secondary-clr);
+  border: none;
+  padding: 0 0.75rem;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+.fetchForm button[type="submit"]:hover {
+  background-color: hsl(0, 0%, 75%);
+}
+
+/* ------ MESSAGES ------ */
+.message{
+  margin-bottom: var(--space-m);
+}
+.message .errorMessage,
+.message .loadingMessage {
+  font-size: 1rem;
+}
+.message .errorMessage {
+  color: hsl(0, 100%, 70%);
+}
+.message .loadingMessage {
+  color: var(--primary-clr);
+}
